@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/F_VFBuildV9.loader.js";
+      var loaderUrl = buildUrl + "/F_VFBuildV11.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/F_VFBuildV9.data.unityweb",
-        frameworkUrl: buildUrl + "/F_VFBuildV9.framework.js.unityweb",
-        codeUrl: buildUrl + "/F_VFBuildV9.wasm.unityweb",
+        dataUrl: buildUrl + "/F_VFBuildV11.data.unityweb",
+        frameworkUrl: buildUrl + "/F_VFBuildV11.framework.js.unityweb",
+        codeUrl: buildUrl + "/F_VFBuildV11.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "VF",
@@ -121,14 +121,7 @@
             };
 
       document.body.appendChild(script);
-// This function can be called from Unity via [DllImport("__Internal")]
-  function SendMessageToReact(message) {
-    if (window.ReactNativeWebView && window.ReactNativeWebView.postMessage) {
-      window.ReactNativeWebView.postMessage(message);
-    } else {
-      console.log("ReactNativeWebView not found");
-    }
-  }
+
     </script>
   </body>
 </html>
